@@ -35,14 +35,10 @@ input[type="search"] {
 	color: #ec5a62;
 }
 
-input[type="search"]::-webkit-input-placeholder {
-    color: #c2c2c2;
+input[type="search"]::placeholder {
+	color: #c2c2c2;
     font-weight: bold;
-   } 
-input[type="search"]::-moz-placeholder {
-    color: #c2c2c2;
-    font-weight: bold;
-   }
+}
 
 input[type="search"]::-webkit-search-cancel-button {
 	display: none;
@@ -53,11 +49,14 @@ input[type=submit] {
 	width: 80px;
 	background-image: url(../img/magnifier.svg);
 	vertical-align: bottom;
-}
+	transition: all ease 0.5s;
+	cursor: pointer;
+	}
 
 input[type=submit]:hover {
-	zoom: 1.2;
-	}
+	/*zoom: 1.2;*/
+	transform: scale(1.2);
+		}
 
 section {
 	display: inline-block;
